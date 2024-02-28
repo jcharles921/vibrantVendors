@@ -1,3 +1,8 @@
+*{
+        padding: 0;
+        margin: 0;
+}
+
 :root {
         --limezing: #B0FF32;
         --deepforest: #004B23;
@@ -9,5 +14,183 @@
         --pinkcottoncandy: #F5C9C9;
         --mintyseafoam: #C6EEE4;
         --deepdark: #000000;
+        --white: #ffffff;
+}
+body{
+        background-color: white;
+        font-family: "Overlock", sans-serif;
+        font-style: normal;
+}
+
+header{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       background-color: var(--deepforest);
+       padding-left: 4.375em;
+       padding-right: 4.375em;
+       /* padding: 0;
+       margin: 0;  */
+}
+.navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: var(--white);
+}
+.navigation div{
+        margin-left: 1.25em;
+        
+}
+.navigation a{
+        text-decoration: none;
+        color: var(--white);
+        font-size: 1.5em;
+        font-weight: 300;
+        border: 1px solid var(--white);
+        border-radius: 50px 50px 50px 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        width: 127px;
+        justify-content: center;
+}
+.navigation a:hover{
+        box-shadow: 0px 0px 4px var(--limezing);
+}
+.productTitle{
+        margin-top: 5px;
+        color: var(--deepforest);
+        font-size: 3em;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+}
+.productBox1{
+        display: flex;
+        justify-content: space-around;
+}
+.productBox2{
+        margin-top: 1.5625rem;
+        display: flex;
+        justify-content: space-around;
+}
+.card{
+        width: 20em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 22.9375em;
+        border: 1px solid var(--deepforest);
+        background-color: var(--mintyseafoam);
+        padding-top: 1.8em; 
+        position: relative;
+        border-radius: 12px 12px 12px 12px;     
+}
+.card img{
+        /* max-width: 15.625em; */
+        max-height: 7.5em;
+        /* padding-bottom: 25px; */
+        /* margin-bottom: 25px; */
 
 }
+.cardDescription{
+        margin-top: -90px;
+        height: 148px;
+        color: var(--deepforest);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.cardDescription h4{
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-top: -15px;
+        margin-bottom: 1.875rem;
+}
+.cardDescription p{
+        margin-bottom: 1.5625rem;
+}
+.cardImage{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        
+}
+/* #gingerCambbage{
+        margin-top: -45px;
+} */
+
+
+.marketingBox{
+        display: flex;
+        flex-direction: row;
+        padding-left: 12.5em;
+        padding-right: 12.5em;
+
+}
+
+
+.marketingBox h3{
+font-size: 3em;
+color: var(--deepforest);
+font-weight: 700;
+}
+.marketingBox img{
+        max-height: 80px;
+}
+.trendingBox{
+        width: 64.23%;
+        display: flex;
+        flex-direction: column;
+}
+.trending{
+        display: flex;
+        flex-direction: row;
+}
+.col1{
+        display: flex;
+        flex-direction: column;
+        margin-right: 75px;
+        /* width: 21.875em; */
+        
+
+}
+
+.col1 .sell{
+        width: 352px;
+        background-color: #F6F3F2;
+        margin-top: 20px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* margin-left: 75px; */
+
+}
+.sell img{
+        max-height:3.75em ;
+        background-color: var(--white);
+        /* height: ; */
+        
+}
+
+
+
+.col2{
+        display: flex;
+        flex-direction: column;
+
+}
+
+.bestSell{
+        display: flex;
+        flex-direction: column;
+}
+
