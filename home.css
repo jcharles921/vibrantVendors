@@ -177,8 +177,11 @@ font-weight: 700;
 .sell img{
         max-height:3.75em ;
         background-color: var(--white);
+        /* height: ; */
         
 }
+
+
 
 .col2{
         display: flex;
