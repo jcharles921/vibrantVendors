@@ -15,6 +15,7 @@
   --mintyseafoam: #c6eee4;
   --deepdark: #000000;
   --white: #ffffff;
+  --mistyblack: rgba(0, 0, 0, 0.25);
 }
 body {
   background-color: white;
@@ -47,7 +48,7 @@ header {
   text-decoration: none;
   color: var(--white);
   font-size: 1em;
-  font-weight: 300;
+
   border: 1px solid var(--white);
   border-radius: 50px 50px 50px 50px;
   height: 40px;
@@ -55,10 +56,13 @@ header {
   align-items: center;
   width: 100px;
   justify-content: center;
+  font-weight: 400;
 }
 .navigation a:hover {
   box-shadow: 0px 0px 4px var(--limezing);
   color: var(--limezing);
+  cursor: pointer;
+  transform: scale(1.05);
 }
 .productTitle {
   margin-top: 30px;
@@ -330,14 +334,13 @@ footer {
   padding-right: 4.375em;
   color: var(--white);
 }
-.socials{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.socials img{
-        max-height: 27px;
-        margin-left: 1.5em;
+.socials img {
+  max-height: 27px;
+  margin-left: 1.5em;
 }
