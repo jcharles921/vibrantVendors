@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Fresh Vegetables Market</title>
+
+    <style>
+        /* .text_about{
+
+            display: flex;
+            justify-content: center;
+
+        } */
+
+
+        *{
+        padding: 0;
+        margin: 0;
+}
+
+:root {
+        --limezing: #B0FF32;
+        --deepforest: #004B23;
+        --brightgrass: #38B000;
+        --midnightblue: #263238;
+        --frostywhite: #F5FFF0;
+        --cloudygrey: #F6F3F3;
+        --silvermist: #D9D9D9;
+        --pinkcottoncandy: #F5C9C9;
+        --mintyseafoam: #C6EEE4;
+        --deepdark: #000000;
+        --white: #ffffff;
+}
+body{
+        background-color: white;
+        font-family: "Overlock", sans-serif;
+        font-style: normal;
+}
+
+header{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       background-color: var(--deepforest);
+       padding-left: 4.375em;
+       padding-right: 4.375em;
+       /* padding: 0;
+       margin: 0;  */
+}
+.navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: var(--white);
+}
+.navigation div{
+        margin-left: 1.25em;
+        
+}
+.navigation a{
+        text-decoration: none;
+        color: var(--white);
+        font-size: 1.5em;
+        font-weight: 300;
+        border: 1px solid var(--white);
+        border-radius: 50px 50px 50px 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        width: 127px;
+        justify-content: center;
+}
+.navigation a:hover{
+        box-shadow: 0px 0px 4px var(--limezing);
+}
+footer {
+  background-color: var(--deepforest);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding-left: 4.375em;
+  padding-right: 4.375em;
+  color: var(--white);
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials img {
+  max-height: 27px;
+  margin-left: 1.5em;
+}
+
+.productTitle{
+        margin-top: 5px;
+        color: var(--deepforest);
+        font-size: 3em;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+}
+.productBox1{
+        display: flex;
+        justify-content: space-around;
+}
+.productBox2{
+        margin-top: 1.5625rem;
+        display: flex;
+        justify-content: space-around;
+}
+.card{
+        width: 20em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 22.9375em;
+        border: 1px solid var(--deepforest);
+        background-color: var(--mintyseafoam);
+        padding-top: 1.8em; 
+        position: relative;
+        border-radius: 12px 12px 12px 12px;     
+}
+.card img{
+        /* max-width: 15.625em; */
+        max-height: 7.5em;
+        /* padding-bottom: 25px; */
+        /* margin-bottom: 25px; */
+
+}
+.cardDescription{
+        margin-top: -90px;
+        height: 148px;
+        color: var(--deepforest);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.cardDescription h4{
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-top: -15px;
+        margin-bottom: 1.875rem;
+}
+.cardDescription p{
+        margin-bottom: 1.5625rem;
+}
+.cardImage{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        
+}
+/* #gingerCambbage{
+        margin-top: -45px;
+} */
+
+
+.marketingBox{
+        display: flex;
+        flex-direction: row;
+        padding-left: 12.5em;
+        padding-right: 12.5em;
+
+}
+
+
+.marketingBox h3{
+font-size: 3em;
+color: var(--deepforest);
+font-weight: 700;
+}
+.marketingBox img{
+        max-height: 80px;
+}
+.trendingBox{
+        width: 64.23%;
+        display: flex;
+        flex-direction: column;
+}
+.trending{
+        display: flex;
+        flex-direction: row;
+}
+.col1{
+        display: flex;
+        flex-direction: column;
+        margin-right: 75px;
+        /* width: 21.875em; */
+        
+
+}
+
+.col1 .sell{
+        width: 352px;
+        background-color: #F6F3F2;
+        margin-top: 20px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* margin-left: 75px; */
+
+}
+.sell img{
+        max-height:3.75em ;
+        background-color: var(--white);
+        /* height: ; */       
+}
+.sell2{
+        width: 270px;
+        background-color: var(--silvermist);
+}
+.sell2 h3{
+        font-size:24px;
+        font-weight: 600;
+
+}
+.sellBackground{
+   width: 100px;
+   height: 80px;
+   background-color: white;     
+}
+/* .sell p{
+
+} */
+
+
+.col2{
+        display: flex;
+        flex-direction: column;
+
+}
+
+.bestSell{
+        display: flex;
+        flex-direction: column;
+}
+
+/* .productTitle2 h3 {
+        font-weight: 700;
+        font-size: 48px;
+        text-align: right; 
+    } */
+    
+    .productTitle2 p {
+        text-align: right; 
+
+        
+        /* display: flex;
+        flex-direction: row;
+        margin-top: -60px; */
+    }
+
+    /* .photo{
+        max-width: 540px;
+        display: flex;
+        flex-direction: row;
+    } */
+
+
+    .productTitle2 img{
+        max-width: 540px;
+        display: flex;
+        flex-direction: row;
+        /* margin-top: -90px; */
+        /* margin-left: -600px; */
+        /* border: 1px solid red */
+    }
+    .text_about h3{
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 700;
+        font-size: 48px;
+        padding: .2rem 4rem;
+        align-items: center;
+
+        color: var(--deepforest);
+    }
+    /* footer{
+
+        background-color: var(--deepforest);
+        height: 60px;
+        width: 100%;
+        border-top: 1px solid var(--deepforest);
+        position: fixed;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        padding-left: 45px;
+        line-height: 60px;
+        color: white;
+        bottom: 0;
+    } */
+
+
+        .productTitle2 {
+            color: var(--deepforest);
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items:center;
+            padding: 0rem 4rem;
+            /* justify-content: center;        */
+        }
+
+        .text_about {
+            display: flex;
+            flex-direction: column;
+        }
+.img {
+    width: 100%;
+}
+.content {
+    
+    text-align: start;
+    width: 50vw
+}
+.content p {
+    line-height: 2.5
+}
+        /* .productTitle2 h3{
+        font-weight: 700;
+        font-size: 48px;
+        } */
+        /* .productTitle2 p{
+            margin-top: 90px;
+        } */
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/icons/Logo.svg" alt="">
+        </div>
+        <div class="navigation">
+            <div> <a href="./index.html">Home</a></div>
+            <div><a href="./home.html">Products</a></div>
+            <div><a href="./about.html">About Us</a></div>
+            <div><a href="./contact.html">Contact Us</a></div>
+        </div>
+    </header>
+
+    <div class="text_about">
+        <h3>Who are we?</h3>
+        <!-- <div class="photo">
+            <img src="./assets/icons/Farmers market-rafiki.svg" alt="">
+        </div> -->
+
+        <div class="productTitle2"> 
+            <div class="img">
+                <img src="./assets/icons/Farmers market-rafiki.svg" alt="">
+            </div>
+            <div class="content">
+
+                <p>In the lively stalls of Kimironko Market, a colorful mix of vendors tells stories as vibrant as their produce. Picture one vendor carefully arranging a rainbow of mangoes, eggplants, and avocados with a sunny smile. 🌞🛍️
+                    
+                    Nearby, another seller happily shares the secrets of Rwanda's chili peppers. Then, there's the vendor in bright fabrics,beaming as they display baskets overflowing with tomatoes, pineapples, and sweet potatoes.
+                    
+                    These friendly faces make Kimironko Market shine, each adding their own flavor to this bustling community hub.🍅🍍🥑</p>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <p>© Tunga Ltd 2024</p>
+        <div class="socials">
+          <img src="./assets/icons/linkedlin.svg" alt="" /><img
+            src="./assets/icons/facebook.svg"
+            alt=""
+          /><img src="./assets/icons/Twitter.svg" alt="" /><img
+            src="./assets/icons/instagram.svg"
+            alt=""
+          />
+        </div>
+      </footer>
+    <!-- <footer>
+         ©Tunga Ltd 2024
+         <div class="socials">
+            <img src="./" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+        </div> -->
+
+        <!-- <div>
+            <li class="flex space-x-5   pt-8 pr-10">
+                <ul> <img src="./public/linkedlin.jpg" alt=""></ul>
+                <ul><img src="./public/x.png" alt=""></ul>
+                <ul><img src="./public/facebook.svg" alt=""></ul>
+                <ul><img src="./public/instagram.svg" alt=""></ul>
+            </li>
+        </div>
+
+    </footer> -->
+
+</body>
+</html>
