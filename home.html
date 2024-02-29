@@ -1,15 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Fresh Vegetables Market</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/icons/Logo.svg" alt="" />
+      </div>
+      <div class="navigation">
+        <div>
+          <a href=""><p>Home</p></a>
+        </div>
+        <div>
+          <a href=""><p>Products</p></a>
+        </div>
+        <div>
+          <a href=""><p>About Us</p></a>
+        </div>
+        <div>
+          <a href=""><p>Contact Us</p></a>
+        </div>
+      </div>
+    </header>
+    <div class="productTitle"><h3>Our Products</h3></div>
+    <div class="productBox1">
+      <div class="card">
+        <div class="cardImage">
+          <img src="./assets/images/png_banana_8508.png" alt="" />
+        </div>
+        <div class="cardDescription">
+          <h4>Banana</h4>
+          <p>Price: 700Rwf/kg</p>
+          <p>Available: In stock</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardImage">
+          <img
+            id="gingerCambbage"
+            src="./assets/images/png_ginger_17902(1).png"
+            alt=""
+          />
+        </div>
+        <div class="cardDescription">
+          <h4>Ginger</h4>
+          <p>Price: 1000Rwf/kg</p>
+          <p>Available: In stock</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardImage">
+          <img src="./assets/images/png_cucumber_17717.png" alt="" />
+        </div>
+        <div class="cardDescription">
+          <h4>Cucumber</h4>
+          <p>Price: 1500Rwf/kg</p>
+          <p>Available: Out of Stock</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardImage">
+          <img
+            id="gingerCambbage"
+            src="./assets/images/png_cabbage_17572.png"
+            alt=""
+          />
+        </div>
+        <div class="cardDescription">
+          <h4>Cabbage</h4>
+          <p>Price: 1500Rwf/kg</p>
+          <p>Available: In stock</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="productBox2">
+      <div class="card">
+        <div class="cardImage">
+          <img src="./assets/images/png_onion_18143.png" alt="" />
+        </div>
+        <div class="cardDescription">
+          <h4>Red onions</h4>
+          <p>Price: 700Rwf/kg</p>
+          <p>Available: In stock</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardImage">
+          <img src="./assets/images/png_kidney_beans_17966.png" alt="" />
+        </div>
+        <div class="cardDescription">
+          <h4>Red beans</h4>
+          <p>Price: 1200Rwf/kg</p>
+          <p>Available: In stock</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardImage">
+          <img src="./assets/images/png_pepper_18254.png" alt="" />
+        </div>
+        <div class="cardDescription">
+          <h4>Pepper</h4>
+          <p>Price: 600Rwf/kg</p>
+          <p>Available: Out of Stock</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardImage">
+          <img src="./assets/images/png_pea_18170.png" alt="" />
+        </div>
+        <div class="cardDescription">
+          <h4>Pea</h4>
+          <p>Price: 2000Rwf/kg</p>
+          <p>Available: In stock</p>
+        </div>
+      </div>
+    </div>
+    <div class="pagination">
+      <p id="currentPage">1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>...</p>
+    </div>
+    <div class="marketingBox">
+      <div class="trendingBox">
+        <h3>Treding Products</h3>
+        <div class="trending">
+          <div class="col1">
+            <div class="sell">
+              <div>
+                <div class="sellBackground">
+                  <img src="./assets/images/png_onion_18143.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <h4>Red Onions</h4>
+                <p>700Rwf/kg</p>
+              </div>
+            </div>
+            <div class="sell">
+              <div>
+                <div class="sellBackground">
+                  <img src="./assets/images/png_cabbage_17572.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <h4>Cabbage</h4>
+                <p>1500Rwf/kg</p>
+              </div>
+            </div>
+            <div class="sell">
+              <div>
+                <div class="sellBackground">
+                  <img src="./assets/images/png_pepper_18254.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <h4>Pepper</h4>
+                <p>700Rwf/kg</p>
+              </div>
+            </div>
+          </div>
+          <div class="col2">
+            <div id="lemon" class="sell2">
+              <div class="lemonWrap1">
+                <h3>Classic Lemon</h3>
+                <div class="sellText"><p>1200Rwf/kg</p></div>
+              </div>
+              <div class="lemonWrap2">
+                <img src="./assets/images/png_lemon_9112.png" alt="" />
+              </div>
+            </div>
+            <div id="waterMellon" class="sell2">
+              <div class="waterMellonWrap1">
+                <h3>Water Mellon</h3>
+                <div class="sellText"><p>5000Rwf/kg</p></div>
+              </div>
+
+              <div class="waterMellonWrap2">
+                <img src="./assets/images/png_watermelon_10030.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bestSell">
+        <h3>Best Sellers</h3>
+        <div class="sell">
+          <div class="sellBackground">
+            <img src="./assets/images/png_corn_17681.png" alt="" />
+          </div>
+          <div>
+            <h4>Corns</h4>
+            <p>700Rwf/kg</p>
+          </div>
+        </div>
+        <div class="sell">
+          <div class="sellBackground">
+            <img src="./assets/images/png_banana_8508.png" alt="" />
+          </div>
+          <div>
+            <h4>Banana</h4>
+            <p>1500Rwf/kg</p>
+          </div>
+        </div>
+        <div class="sell">
+          <div class="sellBackground">
+            <img src="./assets/images/png_apple_8325.png" alt="" />
+          </div>
+          <div>
+            <h4>Apple</h4>
+            <p>700Rwf/kg</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="meetMerchants">
+      <h3>Get to know our Merchants</h3>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="mechantImageContainer">
+          <img src="./assets/images/Chantal.jpg" alt="" />
+          <div class="merchantName">
+            <p>Chantal</p>
+          </div>
+        </div>
+        <div class="mechantImageContainer">
+          <img src="./assets/images/clarisse.jpg" alt="" />
+          <div class="merchantName">
+            <p>Clarise</p>
+          </div>
+        </div>
+        <div class="mechantImageContainer">
+          <img src="./assets/images/Pascal.jpg" alt="" />
+          <div class="merchantName">
+            <p>Pascal</p>
+          </div>
+        </div>
+        <div class="mechantImageContainer">
+          <img src="./assets/images/Bosco.jpg" alt="" />
+          <div class="merchantName">
+            <p>Bosco</p>
+          </div>
+        </div>
+        <div class="mechantImageContainer">
+          <img src="./assets/images/Josianne.jpg" alt="" />
+          <div class="merchantName">
+            <p>Josianne</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>© Tunga Ltd 2024</p>
+      <div class="socials">
+        <img src="./assets/icons/linkedlin.svg" alt="" /><img
+          src="./assets/icons/facebook.svg"
+          alt=""
+        /><img src="./assets/icons/Twitter.svg" alt="" /><img
+          src="./assets/icons/instagram.svg"
+          alt=""
+        />
+      </div>
+    </footer>
+  </body>
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(
+      ".carousel .mechantImageContainer"
+    );
+    const totalSlides = slides.length;
+    const firstSlide = slides[0].cloneNode(true);
+    const lastSlide = slides[slides.length - 1].cloneNode(true);
+
+    slides[slides.length - 1].parentNode.appendChild(firstSlide);
+    slides[0].parentNode.insertBefore(lastSlide, slides[0]);
+    function showSlide(index) {
+      if (index >= totalSlides - 1) {
+        index = 0;
+      } else if (index < 0) {
+        index = totalSlides - 1;
+      }
+
+      const offset = -index * 100 + 50;
+
+      document.querySelector(
+        ".carousel"
+      ).style.transform = `translateX(${offset}%)`;
+      currentIndex = index;
+    }
+
+    function nextSlide() {
+      showSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentIndex - 1);
+    }
+
+    setInterval(nextSlide, 3000);
+  </script>
 </html>
