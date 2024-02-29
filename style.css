@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --limezing: #b0ff32;
+  --deepforest: #004b23;
+  --brightgrass: #38b000;
+  --midnightblue: #263238;
+  --frostywhite: #f5fff0;
+  --cloudygrey: #f6f3f3;
+  --silvermist: #d9d9d9;
+  --pinkcottoncandy: #f5c9c9;
+  --mintyseafoam: #c6eee4;
+  --deepdark: #000000;
+  --white: #ffffff;
+  --mistyblack: rgba(0, 0, 0, 0.25);
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4.375em;
+  padding-right: 4.375em;
+  /* padding: 0;
+         margin: 0;  */
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--white);
+}
+.navigation div {
+  margin-left: 1.25em;
+}
+.navigation a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1em;
+  font-weight: 400;
+  border: 1px solid var(--white);
+  border-radius: 50px 50px 50px 50px;
+  background-color: var(--mistyblack);
+  background-color: var();
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: center;
+}
+.navigation a:hover {
+  box-shadow: 0px 0px 4px var(--limezing);
+  color: var(--limezing);
+  cursor: pointer;
+}
+html {
+  background-image: url("./assets/images/back2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+
+.bigContainer {
+  height: calc(100% - 68px);
+  font-family: "Overlock", sans-serif;
+  font-style: normal;
+  color: var(--white);
+  display: flex;
+  /* align-items: center;
+  justify-content: start; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 1.5em;
+}
+.footer {
+  align-self: end;
+}
+
+.freshWrap {
+  margin-bottom: -80px;
+}
+.freshWrap h1 {
+  font-family: "Overlock", sans-serif;
+  font-size: 5em;
+  font-weight: 400;
+}
+.freshWrap h3 {
+  font-family: "Overlock", sans-serif;
+  font-size: 1.65em;
+  font-weight: 400;
+  margin-top: 0.5em;
+}
+
+.findOutMore {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.findOutMore p {
+  width: 260px;
+  height: 80px;
+  font-size: 1.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--white);
+  border-radius: 50px 50px 50px 50px;
+}
+.findOutMore p:hover {
+  box-shadow: 0px 0px 4px var(--limezing);
+  color: var(--limezing);
+  cursor: pointer;
+}
+.footer {
+  margin-right: 1.5em;
+}
